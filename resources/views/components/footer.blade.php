@@ -1,10 +1,10 @@
 <footer class="d-footer">
-    <div class="row align-items-center justify-content-between">
-        <div class="col-auto">
-            <p class="mb-0">© 2024 WowDash. All Rights Reserved.</p>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-auto text-align-center">
+            <p class="mb-0">© {{ date('Y') }}. All Rights Reserved.</p>
         </div>
-        <div class="col-auto">
-            <p class="mb-0">Made by <span class="text-primary-600">wowtheme7</span></p>
-        </div>
+        {{-- <div class="col-auto">
+            <p class="mb-0">SBCI<span class="text-primary-600">ABCD</span></p>
+        </div> --}}
     </div>
 </footer>

@@ -12889,4 +12889,9 @@ td.fc-header-center {
 
 /* === footer css end === */
 
+/* === custom styles start === */
+.slick-track {
+  height: 95vh;
+}
+/* === custom styles end === */
 /*# sourceMappingURL=style.css.map */

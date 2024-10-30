@@ -19,10 +19,22 @@ use App\Http\Controllers\UsersController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/home', function () {
+    return view('welcome');
+})->name('home');
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('welcome');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/logout', function (Request $request) {
+    Auth::logout();
+
+    // Invalidate and regenerate session
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+
+    return redirect('/'); // Redirect to the home page
+})->name('logout');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

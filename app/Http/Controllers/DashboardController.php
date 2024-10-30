@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('theme/welcome');
+        return view('welcome');
     }
     
     public function index1()
