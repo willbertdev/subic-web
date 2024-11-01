@@ -97,7 +97,7 @@
                         </div>
                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                     </div>
-                    <div class="">
+                    {{-- <div class="">
                         <div class="d-flex justify-content-between gap-2">
                             <div class="form-check style-check d-flex align-items-start">
                                 <input class="form-check-input border border-neutral-300 mt-4" type="checkbox" value="" id="condition">
@@ -109,7 +109,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> --}}
 
                     <button type="submit" class="btn btn-primary text-sm btn-sm px-12 py-16 w-100 radius-12 mt-32"> Sign Up</button>
 

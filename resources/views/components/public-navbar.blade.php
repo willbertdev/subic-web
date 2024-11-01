@@ -41,6 +41,11 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="{{ route('logout') }}" class="pe-40">
+                            <span>About Us</span>
+                        </a>
+                    </li>
                 @endauth
                 @if (Route::has('login'))
                     @guest
