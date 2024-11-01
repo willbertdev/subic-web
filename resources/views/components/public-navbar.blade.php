@@ -43,7 +43,7 @@
                     </li>
                     <li>
                         <a href="{{ route('logout') }}" class="pe-40">
-                            <span>About Us</span>
+                            <span>Logout</span>
                         </a>
                     </li>
                 @endauth
